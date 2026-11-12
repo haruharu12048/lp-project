@@ -188,3 +188,43 @@ p.auther {
 
   text-align: end;
 }
+
+/* CTA */
+
+#cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta.container {
+  display: flex;
+  border-radius: 1rem;
+
+  padding: 5rem;
+
+  flex: 1;
+  justify-content: space-between;
+
+  background-color: var(--color-blue);
+
+  * {
+    color: var(--color-text-light);
+  }
+}
+
+.cta.title {
+  font-size: 2rem;
+}
+
+.cta.signUp {
+  font-size: 1.1rem;
+  font-weight: 800;
+  
+  padding: 0 2rem;
+  
+  border-radius: 1rem;
+  border: solid var(--color-text-light) 3px;
+  background-color: transparent;
+  cursor: pointer;
+}
