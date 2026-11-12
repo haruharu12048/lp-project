@@ -3,6 +3,9 @@
   --color-bg-light: white;
   --color-text-light: #eee;
   --color-text-dark: black;
+
+  --color-blue: #4e80ee;
+  --color-gray: #6e747c;
 }
 
 *,
@@ -24,9 +27,13 @@ a {
   color: blue;
 }
 
+.italic {
+  font-style: italic;
+}
+
 header,
 section {
-  padding: 1rem 20%;
+  padding: 1rem 18%;
 }
 
 .bodyWrap {
@@ -43,6 +50,10 @@ header {
   align-items: center;
 
   background-color: var(--color-bg-dark);
+
+  * {
+    flex-shrink: 0;
+  }
 }
 
 .logo > a,
@@ -62,10 +73,47 @@ header {
 /**/
 
 #hero {
-  height: 500px;
+  height: 600px;
+
+  display: flex;
+
   background-color: var(--color-bg-dark);
 
   * {
-    color: var(--color-bg-light);
+    color: var(--color-text-light);
   }
+}
+
+.hero.container {
+  display: flex;
+  align-items: center;
+}
+
+.hero.contents {
+  padding-right: 3rem;
+
+  > h1 {
+    font-size: 3rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+button.hero.signUp {
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  padding: 0.6rem 2rem;
+
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--color-blue);
+}
+
+.heroImage {
+  height: 60%;
+  aspect-ratio: 3/2;
+
+  background-color: var(--color-gray);
 }
