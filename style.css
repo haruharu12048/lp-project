@@ -220,11 +220,22 @@ p.auther {
 .cta.signUp {
   font-size: 1.1rem;
   font-weight: 800;
-  
+
   padding: 0 2rem;
-  
+
   border-radius: 1rem;
   border: solid var(--color-text-light) 3px;
   background-color: transparent;
   cursor: pointer;
+}
+
+footer {
+  height: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-text-light);
+  background-color: var(--color-bg-dark);
 }
