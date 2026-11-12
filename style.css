@@ -8,6 +8,15 @@
   --color-gray: #6e747c;
 }
 
+header,
+section {
+  padding: 1rem 18%;
+}
+
+section {
+  height: 600px;
+}
+
 *,
 ul,
 li {
@@ -27,22 +36,17 @@ a {
   color: blue;
 }
 
-.italic {
-  font-style: italic;
-}
-
-header,
-section {
-  padding: 1rem 18%;
-}
-
 .bodyWrap {
   display: flex;
   font-family: Roboto;
   flex-direction: column;
 }
 
-/* Body */
+.italic {
+  font-style: italic;
+}
+
+/* BODY */
 
 header {
   display: flex;
@@ -70,11 +74,9 @@ header {
   gap: 1rem;
 }
 
-/**/
+/* HERO */
 
 #hero {
-  height: 600px;
-
   display: flex;
 
   background-color: var(--color-bg-dark);
@@ -116,4 +118,44 @@ button.hero.signUp {
   aspect-ratio: 3/2;
 
   background-color: var(--color-gray);
+}
+
+/* INFORMATION*/
+
+.info.title {
+  font-size: 2rem;
+  font-weight: 900;
+
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.info.container {
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.info.card {
+  width: 200px;
+
+  display: flex;
+  flex-direction: column;
+
+  .thumnail {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+
+    margin-bottom: 0.5rem;
+
+    border-radius: 1rem;
+    border: solid 5px var(--color-blue);
+  }
+  p {
+    text-align: center;
+  }
 }
