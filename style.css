@@ -5,7 +5,8 @@
   --color-text-dark: black;
 
   --color-blue: #4e80ee;
-  --color-gray: #6e747c;
+  --color-gray-dark: #6e747c;
+  --color-gray-light: #e1e3e8;
 }
 
 header,
@@ -117,7 +118,7 @@ button.hero.signUp {
   height: 60%;
   aspect-ratio: 3/2;
 
-  background-color: var(--color-gray);
+  background-color: var(--color-gray-dark);
 }
 
 /* INFORMATION*/
@@ -158,4 +159,32 @@ button.hero.signUp {
   p {
     text-align: center;
   }
+}
+
+/* MESSAGE */
+
+#message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: var(--color-gray-light);
+}
+
+.message.container {
+  padding: 5rem;
+}
+
+p.message {
+  font-size: 2.5rem;
+  font-weight: 300;
+
+  font-style: italic;
+}
+
+p.auther {
+  font-size: 1.6rem;
+  font-weight: 800;
+
+  text-align: end;
 }
